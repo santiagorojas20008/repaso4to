@@ -1,0 +1,6 @@
+suma_total = 0
+
+for numero in range(1, 101):
+    suma_total = suma_total + numero
+
+print("La suma de los primeros 100 números es:", suma_total)
