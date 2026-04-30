@@ -4,13 +4,11 @@ letra_buscada = input("Ingresa la letra que quieres contar: ")
 indice = 0
 contador = 0
 
-# La función len(texto) nos dice cuántos caracteres tiene el texto
 while indice < len(texto):
     # Revisamos la letra en la posición actual del índice
     if texto[indice] == letra_buscada:
         contador = contador + 1
     
-    # Pasamos a la siguiente posición
     indice = indice + 1
 
 print(f"La letra '{letra_buscada}' aparece {contador} veces.")
