@@ -1,0 +1,53 @@
+entrada = input("Ingresa números separados por un espacio (ej: 4 8 15): ")
+texto_numeros = entrada.split() # Separa el texto en partes
+
+numeros = []
+for texto in texto_numeros:
+    numeros.append(int(texto))
+
+print(f"\nTu arreglo es: {numeros}")
+
+suma = sum(numeros)
+print(f"La suma de todos los elementos es: {suma}")
+
+maximo = max(numeros)
+print(f"El número mayor es: {maximo}")
+
+minimo = min(numeros)
+print(f"El número menor es: {minimo}")
+
+promedio = suma / len(numeros)
+print(f"El promedio es: {promedio}")
+
+
+pares = 0
+for num in numeros:
+    if num % 2 == 0: # Si el resto de dividir por 2 es 0, es par
+        pares = pares + 1
+print(f"Hay {pares} números pares en el arreglo.")
+entrada = input("Ingresa números separados por un espacio (ej: 4 8 15): ")
+texto_numeros = entrada.split() # Separa el texto en partes
+
+numeros = []
+for texto in texto_numeros:
+    numeros.append(int(texto))
+
+print(f"\nTu arreglo es: {numeros}")
+
+suma = sum(numeros)
+print(f"La suma de todos los elementos es: {suma}")
+
+maximo = max(numeros)
+print(f"El número mayor es: {maximo}")
+
+minimo = min(numeros)
+print(f"El número menor es: {minimo}")
+
+promedio = suma / len(numeros)
+print(f"El promedio es: {promedio}")
+
+pares = 0
+for num in numeros:
+    if num % 2 == 0: # Si el resto de dividir por 2 es 0, es par
+        pares = pares + 1
+print(f"Hay {pares} números pares en el arreglo.")
