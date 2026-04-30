@@ -1,0 +1,23 @@
+import random
+
+distancia_meta = 100
+corredor1 = 0
+corredor2 = 0
+segundos = 0
+
+print(f"¡Comienza la carrera a los {distancia_meta} metros!")
+
+
+while corredor1 < distancia_meta and corredor2 < distancia_meta:
+
+    corredor1 = corredor1 + random.randint(1, 10)
+    corredor2 = corredor2 + random.randint(1, 10)
+    segundos = segundos + 1
+
+print(f"\n¡Carrera terminada en {segundos} segundos!")
+if corredor1 >= distancia_meta and corredor2 >= distancia_meta:
+    print("¡Es un empate!")
+elif corredor1 >= distancia_meta:
+    print("¡El Corredor 1 es el ganador!")
+else:
+    print("¡El Corredor 2 es el ganador!")
