@@ -1,0 +1,15 @@
+producto = 1
+hubo_numeros = False
+
+print("Vamos a multiplicar números positivos (ingresa un negativo para terminar).")
+numero = int(input("Ingresa un número: "))
+
+while numero >= 0:
+    hubo_numeros = True
+    producto = producto * numero
+    numero = int(input("Ingresa otro número: "))
+
+if hubo_numeros:
+    print(f"El producto de los números ingresados es: {producto}")
+else:
+    print("No se ingresaron números positivos para multiplicar.")
