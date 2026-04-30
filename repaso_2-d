@@ -1,0 +1,5 @@
+palabra = input("Ingresa una palabra: ")
+
+print("Las letras de tu palabra son:")
+for letra in palabra:
+    print(letra)
